@@ -30,10 +30,10 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `movies`;
 CREATE TABLE IF NOT EXISTS `movies` (
   `Movie_Name` varchar(30) NOT NULL,
-  `Lead_Actor` varchar(30) DEFAULT NULL,
-  `Lead_Actress` varchar(30) DEFAULT NULL,
-  `Year_Of_Release` year(4) DEFAULT NULL,
-  `Director_Name` varchar(30) DEFAULT NULL,
+  `Lead_Actor` varchar(30) NOT NULL,
+  `Lead_Actress` varchar(30) NOT NULL,
+  `Year_Of_Release` year(4) NOT NULL,
+  `Director_Name` varchar(30) NOT NULL,
   PRIMARY KEY (`Movie_Name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
